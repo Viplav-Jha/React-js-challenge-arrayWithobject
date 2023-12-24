@@ -1,0 +1,55 @@
+img {
+  width:150px;
+  height:150px;
+
+}
+
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500; /* Semi-Bold */
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
